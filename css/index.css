@@ -3,48 +3,76 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+/*Nav bar*/
+
+.navA {
+    display: flex;
+    align-items: baseline;
+    Justify-content: flex-end;
+    padding: 0px 45px 0px 0px;
+    Width: 100%;
+    margin: 10px 0px 10px 0px;
+    border: none;
 }
+
+.navB a {
+    text-decoration: none;
+    color: black;
+    padding: 17px;
+    Width: 100%;
+    margin: 0px 10.4px;
+    border: none;
+}
+
+.nav-spacing {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 30px;
+}
+
+/*Header Image*/
+
+.logo {
+    display: flex: justify-content: center;
+    margin: 10px 20px;
+}
+
+/*Top Content*/
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
+
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
+
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 * {
@@ -79,11 +107,35 @@ p {
     border-bottom: 1px dashed black;
 }
 
-.top-content .text-container {
-    width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
+#future-p {
+    padding: 0px 40px;
+    width: 110%
 }
+
+#past-p {
+    padding: 0px 40px;
+    width: 110%
+}
+
+.top-content .text-container {
+    width: 50%;
+    padding: 0 1%;
+    padding-bottom: 20px;
+}
+
+#future {
+    margin: 10px 40px;
+    padding: 1px
+}
+
+#past {
+    margin: 10px 40px;
+    padding: 1px
+}
+
+.top-content {}
+
+/*Middle Content*/
 
 .middle-content {
     margin-bottom: 20px;
@@ -112,6 +164,48 @@ p {
     justify-content: center;
 }
 
+.middle-content .box.a {
+    background: teal;
+}
+
+.middle-content .box.b {
+    background: gold;
+}
+
+.middle-content .box.c {
+    background: cadetblue;
+}
+
+.middle-content .box.d {
+    background: coral;
+}
+
+.middle-content .box.e {
+    background: crimson;
+}
+
+.middle-content .box.f {
+    background: forestgreen;
+}
+
+.middle-content .box.g {
+    background: darkorchid;
+}
+
+.middle-content .box.h {
+    background: hotpink;
+}
+
+.middle-content .box.i {
+    background: indigo;
+}
+
+.middle-content .box.j {
+    background: dodgerblue;
+}
+
+/*Bottom Content*/
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -125,6 +219,8 @@ p {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
+
+/*Footer starts here*/
 
 footer {
     width: 100%;
@@ -143,4 +239,93 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* about me page below */
+
+/*Nav Bar*/
+
+.nav-a {
+    display: flex;
+    align-items: baseline;
+    Justify-content: center;
+    padding: 0px 45px 0px 0px;
+    Width: 100%;
+    margin: 10px 0px 10px 0px;
+    border: none;
+}
+
+/*First Image*/
+
+.logo1 {
+    margin: 20px 15%
+}
+
+/* Top Content*/
+
+#About-1 {
+    margin: 20px;
+    padding: 0px 0px 30px 0px;
+    border-bottom: 2px dotted black;
+}
+
+.row1 {
+    display: flex;
+    flex-wrap: warp;
+    Margin: 1%;
+}
+
+.article1 {
+    border-bottom: 2px dotted black;
+    margin: 0% 2%;
+    width: 100%;
+    height: 100%;
+}
+
+.article2 {
+    border-bottom: 2px dotted black;
+    margin: 0% 2%;
+}
+
+#strategy {
+    padding: 20px 0px 0px 0px;
+}
+
+#work {
+    padding: 30px 0px 0px 0px;
+    margin: 20px;
+    text-align: center;
+}
+
+.row2 {
+    display: flex;
+    justify-content: center;
+    Margin: 0% 1%;
+    padding: 50px 0px 0px 20px;
+}
+
+.article3 {
+    border-bottom: 2px dotted black;
+    margin: 0% 2%;
+    width: auto;
+}
+
+.article4 {
+    border-bottom: 2px dotted black;
+    margin: 0% 2%;
+    padding: 10px 0px 0px 20px
+    width: auto;
+}
+
+button {
+    padding: 6px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+/*Bottom Section*/
+
+.bottom {
+    padding: 30px 20px;
 }
